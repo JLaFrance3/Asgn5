@@ -25,6 +25,7 @@ public class App {
             System.out.println("DOG ASCII ART HERE");
         }
         else {
+            //This is an error message
             System.out.println("That is not a 'cat' or a 'dog'");
         }
 
