@@ -18,6 +18,12 @@ public class App {
         animal = animal.toLowerCase();
         System.out.println();
 
+        //Continually ask user for input until valid
+        while (!(animal.equals("cat") || animal.equals("dog"))) {
+            System.out.println("Please try again: ");
+            animal = scan.nextLine();
+        }
+
         if(animal.equals("cat")) {
             System.out.println("CAT ASCII ART HERE");
         }
