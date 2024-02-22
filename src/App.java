@@ -1,3 +1,8 @@
+/* Jean LaFrance
+ * 02/22/2024
+ * Animal Picker program used to test git branch functionality
+ */
+
 import java.util.Scanner;
 
 public class App {
