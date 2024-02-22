@@ -25,10 +25,10 @@ public class App {
         }
 
         if(animal.equals("cat")) {
-            System.out.println("CAT ASCII ART HERE");
+            System.out.println(" _._     _,-\'\"\"`-._\n(,-.`._,\'(       |\\`-/|\n    `-.-\' \\ )-`( , o o)\n          `-    \\`_`\"\'-");
         }
         else if(animal.equals("dog")) {
-            System.out.println("DOG ASCII ART HERE");
+            System.out.println("(\\,--------\'()\'--o\n (_    ___    /~\"\n  (_)_)  (_)_)");
         }
         else {
             //This is an error message
