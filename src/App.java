@@ -9,7 +9,7 @@ public class App {
         
         //Welcome message and prompt
         System.out.println("Welcome to Animal Picker");
-        System.out.println("Please pick either a 'cat' or a 'dog':");
+        System.out.println("Please pick either a 'cat', 'dog', or a 'fish':");
 
         //User selection
         animal = scan.nextLine();
@@ -19,7 +19,7 @@ public class App {
         System.out.println();
 
         //Continually ask user for input until valid
-        while (!(animal.equals("cat") || animal.equals("dog"))) {
+        while (!(animal.equals("cat") || animal.equals("dog") || animal.equals("fish"))) {
             System.out.println("Please try again: ");
             animal = scan.nextLine();
         }
@@ -30,9 +30,8 @@ public class App {
         else if(animal.equals("dog")) {
             System.out.println("(\\,--------\'()\'--o\n (_    ___    /~\"\n  (_)_)  (_)_)");
         }
-        else {
-            //This is an error message
-            System.out.println("That is not a 'cat' or a 'dog'");
+        else if (animal.equals("fish")) {
+            System.out.println("|\\   \\\\\\\\__     o\n| \\_/    o \\    o \n> _   (( <_  oo  \n| / \\__+___/      \n|/     |/");
         }
 
         scan.close();
