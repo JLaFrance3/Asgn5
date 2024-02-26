@@ -14,7 +14,7 @@ public class App {
         
         //Welcome message and prompt
         System.out.println("Welcome to Animal Picker");
-        System.out.println("Please pick either a 'cat', 'dog', or a 'fish':");
+        System.out.println("Please pick either a 'cat', 'dog', or a 'fish', or a 'deer':");
 
         //User selection
         animal = scan.nextLine();
@@ -24,7 +24,7 @@ public class App {
         System.out.println();
 
         //Continually ask user for input until valid
-        while (!(animal.equals("cat") || animal.equals("dog") || animal.equals("fish"))) {
+        while (!(animal.equals("cat") || animal.equals("dog") || animal.equals("fish") || animal.equals("deer"))) {
             System.out.println("Please try again: ");
             animal = scan.nextLine();
         }
@@ -37,6 +37,9 @@ public class App {
         }
         else if (animal.equals("fish")) {
             System.out.println("|\\   \\\\\\\\__     o\n| \\_/    o \\    o \n> _   (( <_  oo  \n| / \\__+___/      \n|/     |/");
+        }
+        else if (animal.equals("deer")){
+            System.out.println("(             )\n `--(_   _)--\'\n      Y-Y\n     /@@ \\\n    /     \\\n    `--\'.  \\             ,\n        |   `.__________/)");
         }
 
         scan.close();
